@@ -1,0 +1,66 @@
+body {
+  font-family: "Lato", "sans-serif";
+}
+
+#menu div {
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(30, 85, 107);
+  width: 100%;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(233, 227, 225);
+  vertical-align: middle;
+  float: center;
+}
+
+#menu input[type="text"] {
+  padding: 6px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 60%;
+  background: #f1f1f1;
+}
+#menu button {
+  width: 38px;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #c5cbcf;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 16px;
+  width: 240px;
+  height: 300px;
+  padding: 10px 5px;
+}
+.grid-container > div > div {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.grid-container > div > div > a > img {
+  width: 180px;
+  height: 180px;
+}

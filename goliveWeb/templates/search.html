@@ -1,0 +1,23 @@
+{{template "header"}}
+
+<body>
+  {{template "menu"}}
+
+  <div class="grid-container">
+    {{ range .Items.Items }}
+    <div>
+      <br />
+      <div>
+        <a href="{{.ItemURL}}"><img src="{{.ImageURL}}" alt="Not found" /></a>
+      </div>
+      <br />
+      <div>{{.Platform}}</div>
+      <div style="width: 180px"><a href="{{.ItemURL}}">{{.Name}}</a></div>
+      <div style="color: red">${{.Price}}</div>
+      <div>Rating:{{.Rating}}/5</div>
+    </div>
+    {{end}}
+  </div>
+</body>
+
+{{template "footer"}}

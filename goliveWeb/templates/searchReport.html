@@ -1,0 +1,25 @@
+{{template "header"}} {{template "menu"}}
+<h2>Search Progress</h2>
+<table id="Table">
+  <tr class="header">
+    <th style="width: 25%">Search Term</th>
+    <th style="width: 20%">Platform 1 time</th>
+    <th style="width: 20%">Platform 2 time</th>
+    <th style="width: 10%">Status</th>
+    <th style="width: 25%">Search Datetime</th>
+  </tr>
+  {{ range $s := .}}
+  <tr>
+    <td>
+      <a href="/search?SearchTerm={{$s.SearchTerm}}">{{$s.SearchTerm}}</a>
+    </td>
+
+    <td>{{$s.ShopeeTime}}</td>
+    <td>{{$s.Qoo10Time}}</td>
+    <td>{{$s.Status}}</td>
+    <td>{{$s.SearchDateTime}}</td>
+  </tr>
+  {{end}}
+</table>
+
+{{template "footer"}}

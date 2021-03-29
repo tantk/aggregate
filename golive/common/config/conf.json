@@ -1,0 +1,10 @@
+{
+    "RESTport":":5000",
+    "ServerLogs":"logs/backend.txt",
+    "ShopeeLogs":"logs/shopeeScrap.txt",
+    "DbUser": "root",
+    "DbPW": "password",
+    "DbPort": "3306",
+    "DbHost": "127.0.0.1",
+    "DbName": "aggre"
+}

@@ -1,0 +1,5 @@
+{
+    "WebPort":":5221",
+    "WebLogs":"logs/web.txt",
+    "RestURL":"http://localhost:5000/api/v1/"
+}

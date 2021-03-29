@@ -1,0 +1,21 @@
+{{define "menu"}}
+<div id="menu">
+  <div>
+    <span style="font-size: 12px; color: rgb(233, 227, 225)">
+      <i class="fas fa-robot fa-5x"></i> </span
+    >Aggregator
+  </div>
+  <div>
+    <form action="/search" method="get">
+      <input
+        type="text"
+        id="search"
+        placeholder="Try to search and compare..."
+        name="SearchTerm"
+      />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<br />
+{{end}}
